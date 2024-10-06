@@ -1,0 +1,407 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+.container{
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+@media (min-width: 768px) {
+    .container{
+        width: 750px;
+    }
+}
+@media (min-width: 992px) {
+    .container{
+        width: 970px;
+    }
+}
+@media (min-width: 1200px) {
+    .container{
+        width: 1170px;
+    }
+}
+/* -------------------- start Nav Bar ------------------ */
+
+.main_nav_bar{
+    width: 100%;
+    position: fixed;
+    z-index: 3;
+    top: 0;
+    background-color: white;
+}
+.main_nav_bar img{
+    width: 180px;
+}
+.main_nav_bar nav{
+    padding: 7px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.main_nav_bar nav ul{
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+.main_nav_bar nav ul li{
+    margin: 0 20px;
+}
+.main_nav_bar nav ul li a{
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.2s;
+}
+.main_nav_bar nav ul li a:hover{
+    color:  rgb(224, 167, 80);
+}
+/* -------------------- End Nav Bar ------------------ */
+
+
+
+
+/* -------------------- start Main page (Home) ------------------ */
+.mainpage{
+    background-image: url('drew-coffman-1872.jpg');
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+.mainpage .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+    color: white;
+    padding: 5px;
+}
+.mainpage .content h4{
+    font-size: 22px;
+    font-weight: 100;
+}
+.mainpage .content h1{
+    font-size: 76px;
+    margin: 17px 0;
+    font-weight: 200;
+}
+.mainpage .content p{
+    font-size: 24px;
+    margin: 20px 0;
+    font-weight: 150;
+}
+.mainpage .content button{
+    font-size: 16px;
+    color: white;
+    padding: 15px;
+    border-radius: 7px;
+    background-color: transparent;
+    margin: 0 15px;
+    font-weight: 800;
+    cursor: pointer;
+    transition: 0.3s;
+    margin-top: 15px;
+}
+#learn_more{
+    background-color:  rgb(142, 119, 84) ;
+    border: none;
+}
+#contact_us{
+    border-color: white;
+}
+.mainpage .content #learn_more:hover{
+    background-color: white;
+    color: black;
+}
+.mainpage .content #contact_us:hover{
+    background-color: white;
+    color: black;
+}
+/* -------------------- End Main Page (Home) ------------------ */
+
+
+/* -------------------- start of section (Who we are) ------------------ */
+.Who_we_are .container{
+    display: flex;
+    padding: 90px 0;
+}
+.Who_we_are img{
+    width: 500px;
+}
+.Who_we_are .container .content{
+    margin-left: 80px;
+}
+.Who_we_are .container .content h2{
+    font-size: 32px;
+    margin: 40px 0;
+}
+.Who_we_are .container .content .content_des{
+    font-size: 17px;
+    margin: 40px 0;
+    color: rgb(141, 134, 127);
+    line-height: 1.6;
+}
+.Who_we_are .container .icons{
+    display:flex;
+    flex-direction: column;   
+}
+.Who_we_are .container .icons .icon{
+    display:flex;
+    margin: 20px 0;
+    align-items: center;
+}
+.Who_we_are .container .icons .icon i{
+    margin-right: 10px;
+    font-size: 20px;
+    border: 2px saddlebrown solid;
+    border-radius: 50%;
+    padding: 10px;
+    color: saddlebrown;
+}
+.Who_we_are .container .icons .icon p{
+    margin-left: 10px;
+    color: rgb(141, 134, 127);
+    color: #969696;
+}
+/* -------------------- End of section (Who we are) ------------------ */
+
+
+/* -------------------------- start our location ---------------------- */
+.our_location{
+    height: 70vh;
+    background-color: rgb(234, 238, 243);
+    display: flex;
+}
+.our_location .container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.our_location img{
+    width: 600px;
+}
+.our_location .contnet{
+    margin-right: 90px;
+}
+.our_location .contnet h2{
+    margin-bottom: 50px;
+    font-size: 32px;
+    letter-spacing: 2px;
+}
+.our_location .contnet p{
+    margin-bottom: 40px;
+    font-size: 17px;
+    line-height: 1.6;
+    color: #969696;
+}
+/* -------------------------- End of (our location) ---------------------- */
+
+/* -------------------------- start section (Baking) ---------------------- */
+
+.Baking .container h2{
+    text-align: center;
+    margin: 60px 0;
+    font-size: 30px;
+    letter-spacing: 2px;
+}
+.Baking .container p{
+    text-align: center;
+    margin: 30px 0;
+    font-size: 17px;
+    letter-spacing: 1px;
+    color: #969696;
+}
+.Baking .container .cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px ;
+}
+.Baking .container .cards .card{
+    text-align: center;
+}
+.Baking .container .cards .card img{
+    width: 380px;
+    margin: 20px 0;
+}
+.Baking .container .cards .card h3{
+    font-size: 22px;
+}
+.Baking .container .cards .card p{
+    font-size: 17px;
+    line-height: 1.6;
+    color: #969696;
+}
+
+/* -------------------------- End section (Baking) ---------------------- */
+
+
+
+/* -------------------------- start section (information) ---------------------- */
+.infoo{
+    background-color: #dfe6e956;
+    padding: 30px 0;
+}
+.information .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.information .container .content{
+    width: 50%; 
+}
+.information .container .content h2{
+    font-size: 32px;
+    margin: 30px 0;
+}
+.information .container .content p{
+    font-size: 17px;
+    margin: 30px 0;
+    line-height: 1.6;
+    color: #969696;
+}
+.details{
+    margin-top: 20px;
+}
+.details .icon{
+    display: flex;
+    align-items: center;
+}
+.details .icon i{
+    margin-right: 15px;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 10px;
+    background-color: rgb(85, 63, 46);
+    color: white;
+}
+.details .icon p{
+    font-size: 17px;
+}
+.locationphoto{
+    display: flex;
+    align-items: center;
+}
+section.information{
+    height: 70vh;
+    width: 100%;
+    margin: 20px 0;
+    padding: 10px;
+    background-color: rgb(212, 217, 221);
+}
+/* -------------------------- End section (information) ---------------------- */
+
+
+/* -------------------------- start section (foooter1) ---------------------- */
+.footer1{
+    /* margin-top: 35px; */
+    color: white;
+    background-color: rgb(64, 61, 56);
+    padding: 20px;
+}
+.footer1 .container{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+}
+.footer1 .container .A1 h4{
+    margin: 35px 0;
+    font-size: 18px;
+}
+.footer1 .container .A1 p{
+    line-height: 1.6;
+    color: #969696;
+}
+.footer1 .container .A1 ul li{
+    margin: 15px 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 5px;
+    font-size: 16px;
+    color: #969696;
+}
+.footer1 .container .A1 .B2{
+    margin: 25px 0;
+    color: #969696;
+    margin-left: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.103);
+    padding: 5px;
+}
+.footer1 .container .A1 .B2 i{
+    margin-right: 10px;
+    font-size: 18px;
+}
+.footer1 .container .A1 .B2 span{
+    line-height: 1.6;
+}
+/* -------------------------- End section (foooter1) ---------------------- */
+
+
+
+/* -------------------------- start of FOOTER ---------------------- */
+
+footer{
+    background-color: rgb(53, 51, 48);
+    padding: 20px 0;
+    color: #969696;
+    text-align: center;
+}
+footer .container{
+    text-align: center;
+    margin: 30px auto;
+}
+footer .footer2 .SocialMedia{
+    margin: 45px auto;
+}
+footer .footer2 .SocialMedia a{
+    border-radius: 50%;
+    padding: 10px;
+    color: #969696;
+    background-color: rgb(66, 57, 51);
+    transition: 0.2s;
+    margin: 0 5px;
+}
+footer .footer2 .SocialMedia a i{
+    font-size: 20px;
+}
+footer .footer2 .SocialMedia a.i1:hover{
+    color: white;
+    background-color: rgb(0, 72, 255);
+}
+footer .footer2 .SocialMedia a.i2:hover{
+    color: white;
+    background-color: rgb(255, 68, 0);
+}
+footer .footer2 .SocialMedia a.i3:hover{
+    color: white;
+    background-color: rgb(2, 91, 135);
+}
+footer .footer2 .SocialMedia a.i4:hover{
+    color: white;
+    background-color: rgb(0, 170, 255);
+}
+/* -------------------------- End of FOOTER ---------------------- */
+
+/* ------- update nav bar links */
+.main_nav_bar nav ul li a{
+    color: #969696;
+}
+.main_nav_bar nav ul li .Home{
+    color: #585757;
+    position: relative;
+}
+.main_nav_bar nav ul li .Home::before{
+    position: absolute;
+    content: '';
+    width: 101%;
+    height: 4px;
+    background-color: rgb(235, 141, 33);
+    top: -22px;
+    z-index: 4;
+}
